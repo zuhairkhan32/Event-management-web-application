@@ -1,0 +1,249 @@
+/* Add the following code to your existing CSS file */
+
+.form-container2 {
+  /* border: 2px solid rgb(221, 31, 21); */
+  margin-top: 90px;
+  height: 60rem;
+  width: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+
+.form-container {
+  /* border: 2px solid rgb(0, 255, 89); */
+  margin-top: 90px;
+  height: 60rem;
+  width: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background-image: url("/static/auth_app/images/pic10.jpg");
+    /* Additional background properties */
+  background-repeat: no-repeat;
+  background-size: cover;
+    /* Adjust the background position if needed */
+  background-position: center;
+
+}
+
+
+.error-message {
+  color: red;
+  /* border: 2px solid red; */
+  margin-bottom: 12px;
+  width: 313px;
+}
+
+
+
+
+
+
+
+
+.signup-main-container {
+    border: 1px solid #ccc;
+    border-top: 5px solid blue;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: auto;
+    background-color: #FFFFFF;
+    color: rgb(20, 39, 205);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .signup-main-container h1 {
+    padding-bottom: 40px;
+    font-family: inter;
+  }
+  
+  .signup-main-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .signup-main-container input[type="text"],
+  .signup-main-container input[type="email"],
+  .signup-main-container input[type="password"] {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(220, 220, 220);
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+    padding-left: 15px;
+  }
+  
+  .signup-main-container input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: blue;
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signup-main-container input[type="submit"]:hover {
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    border: 2px solid blue;
+  }
+  
+  .signup-main-container input[type="text"]:focus,
+  .signup-main-container input[type="email"]:focus,
+  .signup-main-container input[type="password"]:focus {
+    border-color: red;
+  }
+  
+  .signup-main-container .error-message {
+    margin-bottom: 24px;
+    color: red;
+    font-size: 14px;
+}
+  .black{
+    color: rgb(88, 88, 88)
+  }
+  .black > a{
+    text-decoration: none;
+  }
+
+  .error{
+    margin-top: 12px;
+  }
+
+  
+.content-section {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    padding: 100px;
+    margin-top: 90px;
+    height: 100vh;
+}
+
+
+body{
+  background-color: rgba(76, 171, 180, 0.352);
+}
+
+.content-section {
+  margin: 50px;
+  /* border: 2px solid red; */
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  overflow: hidden; /* Ensures the image stays within the circle */
+}
+
+.account-img {
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.media-body {
+  margin-left: 20px;
+}
+
+.account-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-secondary {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.change-password {
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+
+
+.custom-file-input{
+  margin-left: 80px; 
+}
+
+
+
+
+form {
+  margin-top: 20px;
+  max-width: 600px;
+  padding: 20px;
+  
+  background-color: #fff;
+  border-radius: 5px;
+}
+fieldset {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #17a2b8;
+  color: #17a2b8;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #17a2b8;
+  color: #fff;
+}

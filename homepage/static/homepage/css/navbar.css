@@ -1,0 +1,54 @@
+.navbar {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  height: 90px;
+  background-color: #191919;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 30px 20px 10px;
+  /* left: 0;
+  right: 0; */
+  overflow-x: hidden;
+  height: 50px;
+}
+
+/* Logo */
+.navbar a {
+  margin-right: auto;
+}
+
+/* .cuk-redirect-link{
+    border: 2px solid red;
+    
+} */
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* links (as a whole) */
+.navbar > .nav-links {
+  list-style: none;
+  display: inline-flex;
+}
+
+/* links (each) */
+.navbar > ul > li {
+  /* border: 2px solid green; */
+  margin-right: 10px;
+}
+
+.nav-link-saperator {
+  margin-right: 10px;
+  color: #919191;
+}
+.navbar > ul{
+  /* border:  2px solid red; */
+  margin-right: 12px;
+}

@@ -1,0 +1,237 @@
+.event-container{
+    background-color: #212121;
+    margin-top: 90px;
+    padding-bottom: 50px;    
+    /* border: 2px solid red; */
+    
+     /* Set the width of the div as needed */
+     /* Set the height of the div as needed */
+  
+}
+
+
+
+.event-container > img{
+    max-width: 100%; /* Make the image width fit into the div */
+    max-height: 100%; /* Make the image height fit into the div */
+    object-fit: cover;
+}
+
+.button {
+    background-color: #2AC17F;
+    font-family: inter;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.contest{
+  font-family: inter;
+  border-radius: 4px;
+  border: 2px solid cadetblue;
+  border-top: 2px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  
+  padding-bottom: 30px;
+}
+
+
+.main{
+  /* border: 2px solid rgb(43, 255, 0); */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(36, 32, 32);
+  background-color: cadetblue;
+}
+
+
+.body{
+  padding: 20px;
+}
+
+.body > ul > li{
+  padding: 5px;
+  color: #FFF;
+  
+ 
+}
+
+
+/* 
+.form-container {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px;
+ 
+  margin-top:30px;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 50px;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-container input[type="text"]::placeholder,
+.form-container input[type="email"]::placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus {
+  outline: none;
+  background-color: #303245;
+  color: #eee;
+  border-color: #dc2f55;
+  box-shadow: 0px 0px 4px #dc2f55;
+}
+
+.form-container input[type="text"]:focus::placeholder,
+.form-container input[type="email"]:focus::placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+  color: #dc2f55;
+}
+
+.form-container input[type="text"]:not(:placeholder-shown):invalid,
+.form-container input[type="email"]:not(:placeholder-shown):invalid {
+  border-color: #dc2f55;
+  box-shadow: 0px 0px 4px #dc2f55;
+}
+
+.form-container input[type="submit"] {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.form-container input[type="submit"]:active {
+  background-color: #06b;
+}
+
+.form-container th,
+.form-container td {
+  padding: 10px;
+}
+ */
+
+
+
+ .form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #f1f1f1; */
+  border-radius: 5px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+}
+
+.form-container input[type=text], 
+.form-container input[type=email] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+.form-container input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container input[type=submit]:hover {
+  background-color: #3e8e41;
+}
+.semester-field{
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+
+.semester-field::-webkit-outer-spin-button,
+.semester-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+/* No event style */
+
+.event-container-false{
+  margin-top: 90px;
+  text-align: center;
+  background-color: #212121;
+  color: #fff;
+  font-family: inter;
+  padding-left: 30px;
+  height: 60vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: black;
+
+}

@@ -1,0 +1,111 @@
+{% extends 'homepage/base.html' %} {% load static %} 
+
+
+{% block styleblock %}
+
+<link rel="stylesheet" href="{% static 'events/css/event-style.css' %}" /> 
+
+{% endblock styleblock %}
+<style>
+  table {
+    color: red;
+  }
+</style>
+
+{% block mainpage %}
+
+
+{% if event%}
+
+<div class="event-container">
+  <img src="{{ event.image.url}}" width="6000" />
+  
+
+  <div class="contest">
+    
+      <div class="main">
+        <h2>{{ event.title }} <i class="fa-solid fa-code"></i></h2>
+      </div>
+
+      <div class="body">
+        <ul>
+          <li>{{ event.month }} {{ event.day }}, {{ event.year }}</li>
+          <li>Duration: {{ event.duration }}</li>
+        </ul>
+      </div>
+      {% comment %} ----------------------------------- {% endcomment %}
+      <div class="main">
+        <h2>Eligibility <i class="fa-solid fa-list"></i></h2>
+      </div>
+
+      <div class="body">
+        <ul>
+          <li>{{ event.eligibility }}</li>
+        </ul>
+      </div>
+      {% comment %} ----------------------------------------- {% endcomment %}
+
+      <div class="main">
+        <h2>Rules <i class="fa-solid fa-check"></i></h2>
+      </div>
+
+      
+      <div class="body">
+        <ul>
+          <li>Participants must submit their entries by the deadline.</li>
+          <li>Entries must be original and not violate any copyright laws.</li>
+          <li>
+            Participants can submit multiple entries, but only one entry will be
+            eligible for a prize.
+          </li>
+        </ul>
+      </div>
+      {% comment %} ------------------------------------- {% endcomment %}
+
+      <div class="main">
+        <h2>Prize <i class="fa-solid fa-trophy"></i></h2>
+      </div>
+
+
+      <div class="body">
+        <ul>
+          <li>{{ event.prize }}</li>
+        </ul>
+      </div>
+
+
+    
+
+
+    <div class="main">
+      <h2>Register Below <i class="fa-solid fa-check"></i></h2>
+    </div>
+
+    {% comment %} Contest Info ends {% endcomment %}
+
+
+
+    {% comment %} form section starts {% endcomment %}
+    <div class="form-container">
+      <form action="" method="POST">
+        {% csrf_token %}
+          {{ form.as_p }}
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    {% comment %} form section ends {% endcomment %}
+
+  </div>
+
+
+</div>
+{% else %}
+  <div class="event-container-false">
+    <img src="{% static 'events/images/no events.png' %}" alt="" width="300px">
+  </div>
+{% endif %}
+
+
+
+
+{% endblock mainpage %}

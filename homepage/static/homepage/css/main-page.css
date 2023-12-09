@@ -1,0 +1,240 @@
+html{
+    font-family: inter;
+    box-sizing: border-box;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252525;
+    padding: 50px;
+    margin-top: 90px;
+    height: 250px;
+}
+
+
+.intro-heading{
+    font-family: inter;
+    color: #20B2FF;
+    
+}
+.intro-heading > h1{
+    margin-bottom: 5px;
+    
+}
+.intro-heading > p{
+    margin-bottom: 15px;
+    
+}
+.event-btn {
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    font-family: inter;
+    font-size: 16px;
+    padding: 13px 40px;
+    background-color: #2AC17F;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .event-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+    z-index: -1;
+  }
+  
+  .event-btn:hover {
+    background-color: transparent;
+    border: 2px solid #2AC17F;
+    padding: 11px 38px;
+  }
+  
+  .event-btn:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .event-btn:hover::after {
+    transform: scaleX(0);
+  }
+  
+  
+
+.intro-heading > .event-btn{
+    border: 0;
+    font-family: inter;
+    /* font-weight: 900; */
+    font-size: 600;
+    padding: 13px 40px 13px 40px;
+    /* border-radius: 12px; */
+    background-color: #2AC17F;
+    color: #FFFFFF;
+}
+.intro-heading > .event-btn:hover{
+    border: 0;
+    background-color: #212121;
+    border: 2px solid #2AC17F;
+    padding: 11px 38px 11px 38px;
+}
+
+
+
+
+/* Main Div 2 */
+
+.banner-image{
+    width: 70%;
+    height: 60%;
+    margin-left: 40px;
+}
+
+.event-show-banner{
+    background-color: #212121;
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.no-contest{
+    height: 600px;
+    background-color: #212121;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    color: rgb(0, 255, 64);
+}
+
+/* home- learn- section */
+.learn-section{
+    background-color: #212121;
+    color: #FFFFFF;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px; 
+    
+}
+.learn-section-info > h2{
+    text-decoration: underline;
+    margin-bottom: 14px;
+
+}
+
+.home-learn-image{
+    /* width: auto;
+    height: auto; */
+}
+
+.heading{
+    /* border: 2px solid red; */
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.scholar-icon{
+    width: 60px;
+    height: 60px;
+}
+.learn-img{
+    /* border: 2px solid red; */
+}
+
+.compete{
+    background-color: #252525;
+    color: #FFFFFF;
+}
+
+
+.compete-container{
+   border: 2px solid red;
+   width: 50%;
+   padding-left: 40px;
+}
+.contes-detials{
+    text-align: left;
+}
+
+.heading2{
+    /* border: 2px solid red; */
+    justify-content: left;
+}
+.heading2 > div{
+    /* border: 2px solid red; */
+   margin-left: 17px;
+}
+
+.learn-section2{
+    background-color: #252525;
+    height:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Learn section */
+
+.learn-div{
+    height: 600px;
+    background-color:#252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px;
+}
+.learn-things-container{
+    /* border: 2px solid red; */
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+.learn-things-container > h2{
+    color: white;
+    
+}
+.learn-things-container > p{
+    color: white;
+}
+.icons ul{
+    display: flex;
+    gap: 15px;
+
+}
+.icons ul{
+    text-align: center;
+    margin: 50px auto 10px;
+    list-style:none;
+}
+
+@keyframes wiggly {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(5deg); }
+    40% { transform: rotate(-5deg); }
+    60% { transform: rotate(3deg); }
+    80% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.icons li:hover {
+    animation: wiggly 0.5s infinite;
+}

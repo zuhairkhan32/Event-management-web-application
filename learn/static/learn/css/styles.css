@@ -1,0 +1,49 @@
+.learn-header{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #212121;
+}
+.learn-heading > h1{
+    color: #20B2FF;
+    text-decoration: underline;
+}
+
+.learn-heading > p {
+    color: #20B2FF;
+}
+
+
+.card-container{
+   display: flex;
+   padding-top: 60px;
+
+   padding-right: 50px;
+   padding-left: 40px;
+
+   padding-bottom: 60px;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: #252525;
+   gap: 13px;
+}
+
+.card > h2, .card > p{
+    color: #d7d7d7;
+}
+.course-link{
+    color: red;
+}
+
+.course-card-container {
+    transition: transform 0.4s 
+
+}
+  
+  .course-card-container:hover {
+    transform: rotate(-5deg); /* Apply rotation */
+  }
+  
